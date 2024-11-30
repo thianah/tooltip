@@ -1,0 +1,47 @@
+body {
+  font-family: Arial;
+  padding: 0%;
+  background-color: #e4e9ec;
+}
+
+.content {
+  margin: 20px;
+  display: contents;
+  width: 980px;
+  position: absolute;
+}
+
+.quote {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #476272;
+  border-left: 5px solid #ccc;
+  position: relative;
+  width: 390px;
+  height: 110px;
+}
+.note-above {
+  background-color: beige;
+  width: 100px;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  height: 20px;
+  padding-top: 1px;
+}
+.note-right {
+  background-color: antiquewhite;
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  width: 40px;
+  height: 50px;
+  vertical-align: 5px;
+}
+.note-below {
+  background-color: beige;
+  width: 100px;
+  height: 20px;
+  padding-top: 5px;
+}

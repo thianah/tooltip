@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tooltip Note</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        sint atque dolorem fuga ad incidunt voluptatum error fugiat animi amet!
+        Odio temporibus nulla id unde quaerat dignissimos enim nisi rem
+        provident molestias sit tempore omnis recusandae esse sequi officia
+        sapiente.
+      </p>
+      <div class="quote">
+        <!--<div class="note-above">note above</div>
+        <div class="note-right">note at the right</div>
+        <div class="note-below">note below</div>
+      -->
+
+        <p>
+          Teacher: Why are you late?<br />
+          Student: There was a man who lost a hundred dollar bill.<br />
+          Teacher: That's nice. Were you helping him look for it?<br />
+          Student: No. I was standing on it.
+        </p>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        sint atque dolorem fuga ad incidunt voluptatum error fugiat animi amet!
+        Odio temporibus nulla id unde quaerat dignissimos enim nisi rem
+        provident molestias sit tempore omnis recusandae esse sequi officia
+        sapiente.
+      </p>
+      <script>
+        const anchorElement = document.querySelector(".quote");
+        const topNote = document.querySelector(".note-above");
+        const noteRight = document.querySelector(".note-right");
+        const noteBelow = document.querySelector(".note-below");
+        //const newElement = document.createElement("div");
+        console.log(anchorElement);
+        function positionAt(anchor, position, element) {
+          if (position == "above") {
+            anchor.insertAdjacentHTML(
+              "afterbegin",
+              `<div class="note-${position}"> ${element}</div>`
+            );
+          } else if (position == "below") {
+            anchor.insertAdjacentHTML(
+              "beforeend",
+              `<div class="note-${position}"> ${element}</div>`
+            );
+          } else if (position == "right") {
+            anchor.insertAdjacentHTML(
+              "beforeend",
+              `<div class="note-${position}"> ${element}</div>`
+            );
+          } else alert("INVALID POSITION");
+        }
+        positionAt(anchorElement, "above", "note above");
+        positionAt(anchorElement, "below", "note below");
+        positionAt(anchorElement, "right", "note right");
+      </script>
+    </div>
+  </body>
+</html>
